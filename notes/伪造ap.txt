@@ -1,0 +1,11 @@
+sudo vim /etc/netplan/*.yaml	#设置wlan1静态ip和at0静态ip
+sudo netplan apply	#使其生效
+sudo airmon-ng start wlan1	#打开监听模式
+sudo vim /etc/dhcp/dhcpd.conf	#配置at0这个端口的dhcp服务
+sudo vim /etc/default/isc-dhcp-server	#必须做的
+sudo airbase-ng -c 6 -e "Free_wifi" wlan1mon	#生成一个伪装ap
+sudo ifconfig at0 up	#打开at0端口
+sudo service isc-dhcp-server restart	#启动at0这个端口的dhcp服务
+sudo su		#切换到root
+echo "1" > /proc/sys/net/ipv4/ip_forward	#转发需要准备
+sudo iptables -t nat -A POSTROUTING --out-interface $FAKE_AP_INTERNET -j MASQUERADE	#转发流量

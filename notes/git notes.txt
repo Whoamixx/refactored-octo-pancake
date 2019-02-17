@@ -1,0 +1,9 @@
+0 ssh-keygen -t rsa -C "youremail@example.com" #生成SSH Key
+1 #进入github账户建立ssh key
+2 ssh -T git@github.com #检测是否成功
+3 git init <name> #建立初始仓库
+4 cd <name> #到当前仓库下
+5 git remote add <name> <url> #连接到自己仓库url
+6 git add . #添加当前目录所有文件到暂存区
+7 git commit -m "备注信息" #提交并备注信息
+8 git push -u origin master #上传云端
