@@ -1,0 +1,39 @@
+1格式化linux所在硬,用磁盘管理工具删除linux的grub
+
+
+2将ubuntu镜像文件(*.iso)写入u盘,bios设置U盘启动
+
+
+3分区 /80g /boot2g /home80g swap12g
+
+
+4重启在grup界面,按e进入编辑模式,将quite splash改为quite splash nomodeset,再按F10，进入系统后,gedit etc/default/grub 再加一个nomodeset 然后 update-grub
+https://blog.csdn.net/n66040927/article/details/79019891
+
+5联网问题
+https://blog.csdn.net/biggoodloong/article/details/81038922?utm_source=blogxgwz6
+
+
+6添加apt源sudo gedit /etc/apt/source.list 然后apt-get update
+http://wiki.ubuntu.org.cn/%E6%A8%A1%E6%9D%BF:18.04source
+
+
+7下载vim git mdk3 bumblebee bumblebee-nvidia
+
+
+8更改ethx格式 sudo /etc/default/grub GRUB_CMDLINE_LINUX="net.ifnames=0 biosdevname=0"
+https://blog.csdn.net/qq_41078624/article/details/78581586
+
+
+9安装网易云音乐 官网下载ubuntu版本 dpkg -i netease |sudo apt-get -f install |dpkg -i netease
+然后cd /usr/share/applications/netease.desktop --no-sandbox
+https://blog.csdn.net/tennyear/article/details/81487101
+
+
+10安装搜狗输入法sudo apt-get install fcitx 官网下载搜狗 
+https://blog.csdn.net/areigninhell/article/details/79696751
+
+
+11安装aircrack-ng isc-dhcp-server 
+
+
