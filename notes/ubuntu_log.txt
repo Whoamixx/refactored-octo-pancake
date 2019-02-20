@@ -18,7 +18,7 @@ https://blog.csdn.net/biggoodloong/article/details/81038922?utm_source=blogxgwz6
 http://wiki.ubuntu.org.cn/%E6%A8%A1%E6%9D%BF:18.04source
 
 
-7下载vim git mdk3 bumblebee bumblebee-nvidia
+7下载vim mdk3 bumblebee bumblebee-nvidia
 
 
 8更改ethx格式 sudo /etc/default/grub GRUB_CMDLINE_LINUX="net.ifnames=0 biosdevname=0"
@@ -37,3 +37,8 @@ https://blog.csdn.net/areigninhell/article/details/79696751
 11安装aircrack-ng isc-dhcp-server 
 
 
+12配置git
+http://www.runoob.com/git/git-remote-repo.html
+
+
+13
