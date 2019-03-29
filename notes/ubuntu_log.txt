@@ -42,3 +42,6 @@ http://www.runoob.com/git/git-remote-repo.html
 
 
 13去掉nomodeset之后，可以调节亮度 而且有动画了
+
+
+14下载tweak 中dashtodock mac风格
