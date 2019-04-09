@@ -45,3 +45,12 @@ http://www.runoob.com/git/git-remote-repo.html
 
 
 14下载tweak 中dashtodock mac风格
+
+
+15安装youcompleteme  
+sudo apt-get install vim-addon-manager 
+sudo apt-get install vim-youcompleteme
+vim-addons install youcompleteme
+
+
+16

@@ -5,4 +5,8 @@
 这是注释
 '''
 #这也是注释
-print("this" "is" "string")
+x=['dong','jia','cheng']
+y=x.copy()
+y.sort(key=len,reverse=True)
+print(y)
+
